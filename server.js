@@ -9,7 +9,8 @@ var path=require('path');
 app.use(express.static(__dirname + '/public')); 
 app.use(bodyParse.json());
 
-
+//
+const PORT = process.env.PORT || 3000
 const NEXMO_API_KEY = process.env.NEXMO_API_KEY;
 const NEXMO_API_SECRET = process.env.NEXMO_API_SECRET;
 const NEXMO_CUST_A_NUM = process.env.NEXMO_CUST_A_NUM;
@@ -102,7 +103,7 @@ app.get('/logout', (req, res) => {
     res.redirect('/');
 });
 
-const server = app.listen(3000, () => {
+const server = app.listen(PORT, () => {
     console.log(`Server running on port ${server.address().port}`);
 });
 
