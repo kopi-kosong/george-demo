@@ -1,5 +1,6 @@
 # nexmo sms api practice 
-My playground of coding and demo
+My playground of coding and demo. When you login this application, you are asked to enter username & password. (You can enter anything). A SMS will be sent to your mobile which should be configured by you as an envrionment variable 
+
 
 # Deploy to Heroku
 
@@ -34,7 +35,7 @@ npm install
 
 ## Configuring the application
 
-Configure the following in envrionment variables:
+Configure the following in envrionment variables in Windows:
 
 NEXMO_API_KEY=YOUR NEXMO API KEY,
 
@@ -45,6 +46,9 @@ NEXMO_CUST_A_NUM =YOUR Mobile Number,
 NEXMO_BRAND_NAME=UP TO 11 ALPHANUMERIC CHARACTERS
 
 or, you could go to server.js and hardcoded the values.
+
+For how to modify enrionment variables on Windows, please refer to the following :
+https://docs.oracle.com/en/database/oracle/r-enterprise/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html
 
 ```
 ## Running the application
