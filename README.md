@@ -1,5 +1,7 @@
 # nexmo sms api practice 
-My playground of coding and demo. When you login this application, you are asked to enter username & password. (You can enter anything). A SMS will be sent to your mobile which should be configured by you as an envrionment variable 
+My playground of coding and demo. When you login this application, you are asked to enter username & password. (You can enter anything). A SMS will be sent to your mobile which should be configured by you as an envrionment variable. At the SMS OTP page, you should enter the received OTP, then it will bring you to login success page. 
+
+The demo is based on nexmo verify API. 
 
 
 # Deploy to Heroku
