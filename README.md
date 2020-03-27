@@ -1,7 +1,7 @@
 # nexmo sms api practice 
 My playground of coding and demo
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kopi-kosong/nexmo-sms-api.git&env[NEXMO_API_KEY]=testdomain&env[NEXMO_API_SECRET]=testdomain&env[NEXMO_API_SECRET]=testdomain&env[NEXMO_CUST_A_NUM]=testdomain&env[NEXMO_BRAND_NAME]=testdomain)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kopi-kosong/nexmo-sms-api.git)
 
 ## Prerequisites
 ```bash
