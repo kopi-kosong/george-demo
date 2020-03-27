@@ -1,0 +1,7 @@
+{
+  "name": "Node.js Sample",
+  "description": "A Node.js app using Express",
+  "repository": "https://github.com/kopi-kosong/nexmo-sms-api.git",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "static"]
+}
