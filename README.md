@@ -3,11 +3,15 @@ My playground of coding and demo
 
 # Deploy to Heroku
 
-## Step 1: Click the following button to deploy the source to Heroku
+## Step 1: 
+
+Click the following button to deploy the source to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kopi-kosong/nexmo-sms-api.git)
 
-## Step 2: Click on your Application, and Go to "Settings - > Config Vars" to add the following environment variables:
+## Step 2: 
+
+Click on your Application, and Go to "Settings - > Config Vars" to add the following environment variables:
 
 NEXMO_API_KEY=<YOUR NEXMO API KEY>,
 
