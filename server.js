@@ -9,7 +9,11 @@ var path=require('path');
 app.use(express.static(__dirname + '/public')); 
 app.use(bodyParse.json());
 
+<<<<<<< HEAD
 
+=======
+//
+>>>>>>> db831e4cc5daed1d737f937e2a8c574990dadbcb
 const PORT = process.env.PORT || 3000
 const NEXMO_API_KEY = process.env.NEXMO_API_KEY;
 const NEXMO_API_SECRET = process.env.NEXMO_API_SECRET;
