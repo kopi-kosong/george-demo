@@ -9,7 +9,7 @@ var path=require('path');
 app.use(express.static(__dirname + '/public')); 
 app.use(bodyParse.json());
 
-//
+
 const PORT = process.env.PORT || 3000
 const NEXMO_API_KEY = process.env.NEXMO_API_KEY;
 const NEXMO_API_SECRET = process.env.NEXMO_API_SECRET;
@@ -53,7 +53,7 @@ console.log("method: post '/login' : [param] - login user  : " + req.body.uname 
 
  verifyRequestNumber = NEXMO_CUST_A_NUM;
    nexmo.verify.request({
-        number: verifyRequestNumber,
+       number: verifyRequestNumber,
        brand: NEXMO_BRAND_NAME
     }, (err, result) => {
         if (err) {
@@ -81,9 +81,18 @@ app.post('/check-code', (req, res) => {
         code: req.body.code
     }, (err, result) => {
         if (err) {
+			  console.log("After Verify-ERR Leg ");
             console.error(err);
+			        // Redirect to the home page
+			
+        
         } else {
+			
+          console.log("After Verify-ELSE return status " + result.status);
+
             if (result.status == 0) {
+				
+				  console.log("result is 0");
                 /* 
                     User provided correct code,
                     so create a session for that user
@@ -91,10 +100,14 @@ app.post('/check-code', (req, res) => {
                 req.session.user = {
                     number: verifyRequestNumber
                 }
-            }
-        }
-        // Redirect to the home page
+						        // Redirect to the login success page
 	res.sendFile('/public/login_success.html', { root: __dirname }) ;
+            } else {
+			        // Redirect to the login fail page
+					res.sendFile('/public/login_fail.html', { root: __dirname }) ;
+			}
+        }
+
     });
 });
 
